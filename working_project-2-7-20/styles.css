@@ -11,8 +11,6 @@
 .container{
     width: 80%;
     height: 80%;
-    min-width: 1000px;
-    min-height: 800px;
     background: white;
     display: flex;
     flex-direction: column;
@@ -51,16 +49,4 @@ h2{
     border: 1px solid black;
     color: green;
     font-weight: 800;
-}
-
-#visData{
-    width: 80%;
-    height: 80%;
-    min-height: 800px;
-}
-
-#svgMap{
-    width: 75%;
-    height: 75%;
-    min-height: 800px;
 }

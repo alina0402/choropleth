@@ -46,12 +46,16 @@ function makeLegend(svg, colors, values, height, formatIt, showFirstLast) { // t
             .attr("font-size", "10px");         
 }
 
+    const visWidth = document.getElementById('container').clientWidth - PADDING;
     const titlesHeight = document.getElementById("title").offsetHeight + document.getElementById("title2").offsetHeight;
     const visHeight = document.getElementById('container').offsetHeight
                         - titlesHeight
                         - PADDING*2;
 
-    const svg = d3.select("#svgMap");
+    const svg = d3.select("#visData")
+                  .append("svg")
+                  .attr('width', visWidth)
+                  .attr('height', visHeight);
 
     // MAKE TOOLTIP:
     const tooltip = d3.selectAll('#visData')
